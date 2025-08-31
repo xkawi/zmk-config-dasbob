@@ -43,25 +43,25 @@
 
         // This is a sample keymap intended to be replaced with your own
 
+        Nav {
+            bindings = <
+&trans    &trans    &repeat    &snip      &lock   &kp K_REDO  &kp LS(INS)    &kp LC(INS)  &kp LS(DELETE)  &kp K_UNDO
+&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &caps_word  &kp LEFT       &kp DOWN     &kp UP          &kp RIGHT
+&trans    &trans    &trans     &trans     &trans  &kp INS     &kp HOME       &kp PG_DN    &kp PG_UP       &kp END
+                    &trans     &trans     &trans  &kp ENTER   &kp BACKSPACE  &kp DEL
+            >;
+        };
+
         Base {
             bindings = <
-&kp Q  &kp W  &kp E       &kp R             &kp T        &kp Y      &kp U        &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D       &hm LEFT_SHIFT F  &kp G        &kp H      &hm LSHFT J  &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C       &kp V             &kp B        &kp N      &kp M        &kp COMMA  &kp DOT  &kp SLASH
-              &kp ESCAPE  &lt 1 BACKSPACE   &lt 3 SPACE  &kp ENTER  &lt 2 DEL    &kp TAB
+&kp Q       &kp W       &kp E        &kp R             &kp T      &kp Y        &kp U        &kp I         &kp O       &kp P
+&mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G      &kp H        &mt LSHFT J  &mt RCTRL K   &mt LALT L  &mt RGUI SQT
+&lt 7 Z     &kp X       &kp C        &kp V             &kp B      &kp N        &kp M        &kp COMMA     &kp DOT     &kp SLASH
+                        &lt 3 ESC    &lt 0 SPACE       &lt 2 TAB  &lt 5 ENTER  &lt 4 DEL    &lt 6 DELETE
             >;
         };
 
-        Num {
-            bindings = <
-&trans        &trans        &repeat  &snip   &lock           &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&kp NUMBER_1  &kp N2        &kp N3   &kp N4  &kp N5          &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&kp NUMBER_6  &kp NUMBER_7  &kp N8   &kp N9  &kp N0          &kp F11  &kp F12  &trans  &trans  &trans
-                            &trans   &trans  &kp LEFT_SHIFT  &trans   &trans   &trans
-            >;
-        };
-
-        Sym {
+        Mouse {
             bindings = <
 &kp DOUBLE_QUOTES  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LC(X)         &kp LC(C)  &kp UP         &kp LC(V)  &trans
 &kp LS(NUMBER_1)   &kp LS(NUMBER_2)      &kp LS(NUMBER_3)       &kp LS(NUMBER_4)  &kp LS(N5)         &kp SINGLE_QUOTE  &kp LEFT   &kp DOWN       &kp RIGHT  &trans
@@ -70,12 +70,48 @@
             >;
         };
 
-        Misc {
+        Media {
             bindings = <
 &trans  &trans  &trans  &kp LS(Z)  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &kp LS(Y)  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans     &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Sym {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Fun {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Buttons {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
