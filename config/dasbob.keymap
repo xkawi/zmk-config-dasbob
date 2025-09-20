@@ -18,21 +18,21 @@
 
         // This is a sample keymap intended to be replaced with your own
 
+        Base {
+            bindings = <
+&kp Q       &kp W       &kp E        &kp R             &kp T      &kp Y        &kp U            &kp I         &kp O       &kp P
+&mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G      &kp H        &mt LSHFT J      &mt RCTRL K   &mt LALT L  &mt RGUI SQT
+&lt 7 Z     &kp X       &kp C        &kp V             &kp B      &kp N        &kp M            &kp COMMA     &kp DOT     &kp SLASH
+                        &lt 3 ESC    &lt 1 SPACE       &lt 2 TAB  &lt 5 ENTER  &lt 4 BACKSPACE  &lt 6 DELETE
+            >;
+        };
+
         Nav {
             bindings = <
 &trans    &trans    &trans     &trans     &lock   &kp K_REDO  &kp LS(INS)    &kp LC(INS)  &kp LS(DELETE)  &kp K_UNDO
 &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &caps_word  &kp LEFT       &kp DOWN     &kp UP          &kp RIGHT
 &trans    &trans    &trans     &trans     &trans  &kp INS     &kp HOME       &kp PG_DN    &kp PG_UP       &kp END
                     &trans     &trans     &trans  &kp ENTER   &kp BACKSPACE  &kp DEL
-            >;
-        };
-
-        Base {
-            bindings = <
-&kp Q       &kp W       &kp E        &kp R             &kp T      &kp Y        &kp U            &kp I         &kp O       &kp P
-&mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G      &kp H        &mt LSHFT J      &mt RCTRL K   &mt LALT L  &mt RGUI SQT
-&lt 7 Z     &kp X       &kp C        &kp V             &kp B      &kp N        &kp M            &kp COMMA     &kp DOT     &kp SLASH
-                        &lt 3 ESC    &lt 0 SPACE       &lt 2 TAB  &lt 5 ENTER  &lt 4 BACKSPACE  &lt 6 DELETE
             >;
         };
 
